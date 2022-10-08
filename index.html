@@ -1,18 +1,92 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta  charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Tang Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header></header>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Tang</title>
+    <link rel="stylesheet" href="general_settings.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="about_me.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_text">
+        <nav>
+          <input type="checkbox" id="toggle_button" />
+          <label for="toggle_button">
+            <span class="material-symbols-outlined">menu</span>
+          </label>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about_me_section">Über mich</a></li>
+            <li><a href="#">Werdegang</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+        <h1>
+          Willkommen, <br />
+          <span style="color: var(--main-brand-color)">auf meiner Seite</span>
+        </h1>
+        <p class="subheading">Lorem ipsum hier steht mein Text</p>
+      </div>
+      <div class="circle">
+        <img src="Bild.jpg" alt="" />
+      </div>
+    </header>
+    <section id="about_me_section">
+      <div class="about_me_container">
+        <h2>Über mich</h2>
+        <p>
+          Vor- und Nachname: &nbsp;&nbsp;&nbsp;Eric Tang <br />
+          Geburtsdatum: &nbsp;&nbsp;&nbsp;11. Mai 1999 <br />
+          Heimatort: &nbsp;&nbsp;&nbsp;Wohlen bei Bern <br />
+          Hobbys: &nbsp;&nbsp;&nbsp;Fussball, Fitness, Schlafen <br />
+        </p>
+      </div>
+      <img src="Bild2.jpg" alt="" />
+    </section>
     <section></section>
     <section></section>
-    <section></section>
-    <footer></footer>
-</body>
+    <section id="projects">
+      <h2>Projekte</h2>
+      <div class="flex_container">
+        <div class="card">
+          <h3>Projekt im Modul WSEG</h3>
+          <p>
+            Im Modul Softwareengineering im 3.Semester baute ich mit drei
+            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
+            Autoinseratportal. usw.....
+          </p>
+          <a href="">Webseite aufrufen</a>
+        </div>
+        <div class="card">
+          <h3>Projekt im Modul WSEG</h3>
+          <p>
+            Im Modul Softwareengineering im 3.Semester baute ich mit drei
+            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
+            Autoinseratportal. usw.....
+          </p>
+          <a href="">Webseite aufrufen</a>
+        </div>
+        <div class="card">
+          <h3>Projekt im Modul WSEG</h3>
+          <p>
+            Im Modul Softwareengineering im 3.Semester baute ich mit drei
+            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
+            Autoinseratportal. usw.....
+          </p>
+          <a href="">Webseite aufrufen</a>
+        </div>
+      </div>
+    </section>
+    <footer id="contact"></footer>
+  </body>
 </html>
