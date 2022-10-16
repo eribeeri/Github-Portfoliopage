@@ -1,92 +1,160 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eric Tang</title>
+    <!--========== UNICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--========== BOXICONS ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--========== CSS ==========-->
     <link rel="stylesheet" href="general_settings.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="about_me.css" />
+    <link rel="stylesheet" href="werdegang.css" />
+    <link rel="stylesheet" href="skills.css" />
     <link rel="stylesheet" href="projects.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Eric Tang</title>
   </head>
+
   <body>
-    <header>
-      <div class="header_text">
-        <nav>
-          <input type="checkbox" id="toggle_button" />
-          <label for="toggle_button">
-            <span class="material-symbols-outlined">menu</span>
-          </label>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#about_me_section">Über mich</a></li>
-            <li><a href="#">Werdegang</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#projects">Projekte</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-        </nav>
-        <h1>
-          Willkommen, <br />
-          <span style="color: var(--main-brand-color)">auf meiner Seite</span>
-        </h1>
-        <p class="subheading">Lorem ipsum hier steht mein Text</p>
-      </div>
-      <div class="circle">
-        <img src="Bild.jpg" alt="" />
-      </div>
-    </header>
-    <section id="about_me_section">
-      <div class="about_me_container">
-        <h2>Über mich</h2>
-        <p>
-          Vor- und Nachname: &nbsp;&nbsp;&nbsp;Eric Tang <br />
-          Geburtsdatum: &nbsp;&nbsp;&nbsp;11. Mai 1999 <br />
-          Heimatort: &nbsp;&nbsp;&nbsp;Wohlen bei Bern <br />
-          Hobbys: &nbsp;&nbsp;&nbsp;Fussball, Fitness, Schlafen <br />
-        </p>
-      </div>
-      <img src="Bild2.jpg" alt="" />
-    </section>
-    <section></section>
-    <section></section>
-    <section id="projects">
-      <h2>Projekte</h2>
-      <div class="flex_container">
-        <div class="card">
-          <h3>Projekt im Modul WSEG</h3>
-          <p>
-            Im Modul Softwareengineering im 3.Semester baute ich mit drei
-            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
-            Autoinseratportal. usw.....
-          </p>
-          <a href="">Webseite aufrufen</a>
+    <!--========== SIDEBAR ==========-->
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav">
+        <div class="nav__menu">
+          <div class="menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Über mich</a>
+              </li>
+              <li class="nav__item">
+                <a href="#werdegang" class="nav__link">Werdegang</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projekte</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Kontakt</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <h3>Projekt im Modul WSEG</h3>
-          <p>
-            Im Modul Softwareengineering im 3.Semester baute ich mit drei
-            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
-            Autoinseratportal. usw.....
-          </p>
-          <a href="">Webseite aufrufen</a>
+      </nav>
+    </aside>
+    <!--========== MAIN ==========-->
+    <main class="main">
+      <!--===== Home =====-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">Willkommen auf meiner Seite!</h1>
+            <h2 class="home__subtitle">Ich bin Eric Tang</h2>
+          </div>
+          <img src="Bild.jpg" alt="" class="home__img" />
+          <a href="#about" class="button"
+            ><i class="uil uil-user button__icon"></i>
+            Klick mich um mehr über mich zu erfahren!
+          </a>
         </div>
-        <div class="card">
-          <h3>Projekt im Modul WSEG</h3>
-          <p>
-            Im Modul Softwareengineering im 3.Semester baute ich mit drei
-            anderen Mitstudenten die Webseite "Dein Neuer Alter" ein sogenannter
-            Autoinseratportal. usw.....
-          </p>
-          <a href="">Webseite aufrufen</a>
+      </section>
+      <!--===== About me=====-->
+      <section class="about section" id="about">
+        <h2 class="section__title">Über mich</h2>
+
+        <div class="about__container container grid">
+          <img src="Bild2.jpg" alt="" class="about__img">
+          <div class="about__data">
+            <h3 class="about__heading">Hallo ich bin Eric Tang</h3>
+            <p class="about__description">Geboren am 11.Mai 1999 in der Schweiz. Meine Hobbys sind Fussball spielen, Fitness und Schlafen. Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung. </p>
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="uil uil-award about__icon"></i>
+                <h3 class="about__title">Erfahrung</h3>
+                <span class="about__subtitle">1+ Jahren</span>
+              </div>
+
+              <div class="about__box">
+                <i class="uil uil-suitcase-alt about__icon"></i>
+                <h3 class="about__title">Abgeschlossen</h3>
+                <span class="about__subtitle">1+ Projekte</span>
+              </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer id="contact"></footer>
+      </section>
+      <!--===== Werdegang =====-->
+      <section class="werdegang section">
+        <h2 class="section__title">Werdegang</h2>
+
+        <div class="werdegang__container container grid">
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                  <h3 class="timeline__title">Lehre bei Login Berufsbildung AG</h3>
+                    <p class="timeline__text">Als Automatikmonteur</p>
+                    <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                      2016-2019
+                    </span>
+              </div>
+
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                  <h3 class="timeline__title">Berufsmaturität an der WKS KV Bildung</h3>
+                    <p class="timeline__text">Typ Dienstleistung Vollzeit</p>
+                    <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                      2019-2020
+                    </span>
+              </div>
+
+              <div class="timeline__item">
+                <div class="circle__dot"></div>
+                  <h3 class="timeline__title">Berner Fachhochschule Wirtschaft</h3>
+                    <p class="timeline__text">Bachelorstudium im Studiengang Wirtschaftsinformatik</p>
+                    <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                      2020-2023
+                    </span>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--===== Skills =====-->
+
+      <!--===== Projects =====-->
+
+      <!-- Portfolio Popup -->
+
+      <!--===== Contact =====-->
+
+      <!--===== FOOTER =====-->
+    </main>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--========== MIXITUP FILTER ==========-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
