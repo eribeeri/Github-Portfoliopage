@@ -34,10 +34,24 @@ const tabs = document.querySelectorAll('[data-target]'),
 
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.project__container', {
+    selectors: {
+        target: '.project__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /*===== Link Active Work =====*/
+const linkProject = document.querySelectorAll('.project__item')
 
+function activeProject(){
+    linkProject.forEach(l=> l.classList.remove('active-project'))
+    this.classList.add('active-project')
+}
+
+linkProject.forEach(l=> l.addEventListener("click", activeProject))
 
 /*===== Work Popup =====*/
 
