@@ -72,13 +72,26 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".portfolio__popup-subtitle span").innerHTML = portfolioItem.querySelector(".project__title").innerHTML
     document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML
 }
-/*=============== SERVICES MODAL ===============*/
-
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
 
 /*=============== INPUT ANIMATION ===============*/
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+    let parent  = this.parentNode;
+    parent.classlist.add("focus");
+}
+
+function blurFunc() {
+    let parent  = this.parentNode;
+    if(this.value == "") {
+        parent.classlist.remove("focus");
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+})
+
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
