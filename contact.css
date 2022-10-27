@@ -121,7 +121,7 @@ textarea.input{
     width: 10%;
     height: 5px;
     opacity: 0;
-    background-color: var(--text-color);
+    background-color: var(--body-color);
     top: 50%;
     transform: translateY(-50%);
     transition: .3s;
