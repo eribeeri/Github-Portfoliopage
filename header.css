@@ -10,8 +10,8 @@
 }
 
 .home__img {
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 300px;
     max-height: 80vw;
     max-width: 80vw;
     overflow: hidden;
@@ -61,6 +61,32 @@
     position: relative;
     transition: .4s;
     font-size: 30px;
+}
+
+.nav__toggle{
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__close{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    cursor: pointer;
+    display: none;
+
 }
 
 
