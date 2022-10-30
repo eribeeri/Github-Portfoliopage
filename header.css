@@ -60,7 +60,7 @@
     font-weight: var(--font-medium);
     position: relative;
     transition: .4s;
-    font-size: 30px;
+    font-size: 10px;
 }
 
 .nav__toggle{
