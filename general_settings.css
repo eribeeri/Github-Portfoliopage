@@ -78,8 +78,12 @@ input {
 }
 
 body {
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background-image: url(Insel.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 h1,
@@ -189,6 +193,7 @@ input {
 .home__title {
     font-size: var(--biggest-font-size);
 }
+
 
 .home__subtitle {
     font-size: var(--h3-font-size);
@@ -300,15 +305,16 @@ input {
 
 /*=============== MAIN ===============*/
 .main {
-    padding: 100px 25px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    
     flex-wrap: wrap;
 }
 
 /*===== About Section =====*/
+
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
@@ -356,6 +362,12 @@ input {
 }
 
 /*===== Werdegang Section =====*/
+.section{
+    background-image: url(Unterwasser2.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+}
 .werdegang__container {
     justify-content: center;
 }
