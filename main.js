@@ -128,3 +128,18 @@ function navHighlighter(){
 }
 
 /*=============== SHOW SCROLL UP ===============*/
+
+/*Typing*/
+var typed = new Typed(".typing",{
+    strings:["Ich bin Eric Tang", "Klicke auf das Bild um mehr über mich zu erfahren!"],
+    typeSpeed: 100,
+    BackSpeed: 100,
+    loop:true
+})
+
+var typed = new Typed(".typing1",{
+    strings:["Willkommen auf meiner Seite"],
+    typeSpeed: 100,
+    BackSpeed: 100,
+    loop:false
+})

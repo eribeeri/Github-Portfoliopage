@@ -67,14 +67,18 @@
       <section class="home" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <h1 class="home__title">Willkommen auf meiner Seite!</h1>
-            <h2 class="home__subtitle">Ich bin Eric Tang</h2>
+            <h1 class="home__title"><span class="typing1"></span></h1>
+            <h2 class="home__subtitle"><span class="typing"></span></h2>
           </div>
-          <img src="Bild.jpg" alt="" class="home__img" />
-          <a href="#about" style="margin-bottom: 50px ;" class="button"
-            ><i class="uil uil-user button__icon"></i>
-            Klick mich um mehr über mich zu erfahren!
-          </a>
+          <div class="container1">
+            <ul>
+              <li>
+                <div class="border__img">
+                  <a href="#about"><img src="Bild.jpg" alt="" class="home__img" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--===== About me=====-->
@@ -531,6 +535,8 @@
     <!--========== SWIPER JS ==========-->
     <script src="swiper-bundle.min.js"></script>
 
+    <!--========== Typing JS ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <!--========== MAIN JS ==========-->
     <script src="main.js"></script>
   </body>
