@@ -268,7 +268,7 @@ input {
     font-weight: var(--font-medium);
     position: relative;
     transition: .4s;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .nav__toggle {
@@ -381,6 +381,7 @@ input {
     background-size: cover;
     margin: auto;
     width: 100%;
+    height: 100%;
 }
 .werdegang__container {
     justify-content: center;

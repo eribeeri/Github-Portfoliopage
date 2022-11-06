@@ -137,9 +137,3 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
-var typed = new Typed(".typing1",{
-    strings:["Willkommen auf meiner Seite"],
-    typeSpeed: 100,
-    BackSpeed: 100,
-    loop:false
-})
