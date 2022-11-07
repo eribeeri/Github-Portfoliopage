@@ -130,6 +130,7 @@ input {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
     padding: 6.5rem 0 2rem;
+    min-height: 100vh;
 }
 
 .section__title {
@@ -190,7 +191,7 @@ input {
 
 /*===== Home Section =====*/
 .home{
-    height: 100%;
+    min-height: 100vh;
 }
 .home__title {
     font-size: var(--biggest-font-size);
@@ -282,7 +283,7 @@ input {
     border-radius: .25rem;
     background-color: var(--skin-color);
     color: var(--title-color);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -866,48 +867,7 @@ textarea.input {
         margin-right: var(--mb-1-5);
     }
 
-    .sidebar{
-        width: 100%;
-        z-index: 999;
-        transform: translateX(-100%);
-    }
-
-    .show-sidebar{
-        transform: translateX(0);
-    }
-
-    .nav__menu{
-        height: 100%;
-        width: 100%;
-        transform: rotate(0deg) translateX(0);
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav__list {
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav__link{
-        padding: 1rem 0;
-        line-height: 1.5;
-    }
-
-    .nav__link.active-link::after, .nav__link:hover::after{
-        bottom: 0;
-    }
-
-    .nav__close{
-        display: block;
-    }
-
-    .nav__toggle{
-        display: flex;
-
-    }
+    
 
     .main{
         margin-left: 0;
@@ -975,6 +935,74 @@ textarea.input {
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+
+    .sidebar {
+            width: 100%;
+            z-index: 999;
+            transform: translateX(-100%);
+        }
+    
+        .show-sidebar {
+            transform: translateX(0);
+        }
+    
+        .nav__menu {
+            height: 100%;
+            width: 100%;
+            transform: rotate(0deg) translateX(0);
+            display: flex;
+            justify-content: center;
+        }
+    
+        .nav__list {
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .nav__link {
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+    
+        .nav__link.active-link::after,
+        .nav__link:hover::after {
+            bottom: 0;
+        }
+    
+        .nav__close {
+            display: block;
+        }
+    
+        .nav__toggle {
+            display: flex;
+        }
+    
+        .nav__toggle {
+            right: initial;
+            left: 1.5rem;
+        }
+
+                .home {
+                    background-image: none;
+                    height: initial;
+                    align-items: initial;
+                    padding: 7rem 0 2rem;
+                }
+        
+                .home__container {
+                    row-gap: 2rem;
+                }
+        
+                .border__img {
+                    display: block;
+                    width: 250px;
+                    justify-self: center;
+                }
+
+    
+    
     .about__img{
         width: 250px;
     }
@@ -1018,10 +1046,6 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
-    .nav__toggle{
-        right: initial;
-        left: 1.5rem;
-    }
 
     .home {
         background-image: none;
