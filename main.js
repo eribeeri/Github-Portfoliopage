@@ -137,3 +137,21 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
+/*Sending Email function*/
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Port: "2525",
+        Username : "tang.eric@hotmail.com",
+        Password : "9A8606CF2DC8FE69045BEF994002ADD636D4",
+        To : 'tang.eric@hotmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Telefonnummer: " + document.getElementById("tel").value
+            + "<br> Nachricht: " + document.getElementById("nachricht").value
+    }).then(
+    message => alert("Nachricht wurde erfolgreich übermittelt! Ich melde mich schnellstmöglich bei Ihnen.")
+    );
+}
