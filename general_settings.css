@@ -139,6 +139,14 @@ input {
     margin-bottom: var(--mb-3);
 }
 
+.underwater {
+    background-image: url(Unterwasser2.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 /*===== Buttons =====*/
 .button {
     display: inline-flex;
@@ -241,6 +249,7 @@ input {
     height: 100vh;
     background-color: transparent;
     transition: .5s; 
+    z-index: 9999;
 }
 
 .nav__menu {
@@ -324,34 +333,118 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     flex-wrap: wrap;
 }
 
 /*===== About Section =====*/
+#particles{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.fish{
+    position: absolute;
+}
+
+.fish1{
+    top: 70%;
+    height: 80px;
+    animation: animateright 30s linear infinite;
+}
+
+.fish2 {
+    top: 20%;
+    height: 80px;
+    animation: animateright 25s linear infinite;
+}
+
+.fish3{
+    top: 50%;
+    height: 60px;
+    animation: animateleft 30s linear infinite;
+}
+
+.fish4 {
+    top: 40%;
+    height: 80px;
+    animation: animateright 25s linear infinite;
+}
+
+@keyframes animateright {
+    0% {
+        transform: translateY(-50px);
+        right: -25%;
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    75% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+        right: 150%;
+    }
+}
+
+@keyframes animateleft{
+    0%{
+        transform: translateY(-50px);
+        left: -25%;
+    }
+
+    25%{
+        transform: translateY(0px);
+    }
+    
+    50%{
+        transform: translateY(50px);
+    }
+
+    75%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-50px);
+        left: 150% ;
+    }
+}
 
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
-    align-items: center;
+    align-items: center; 
+    z-index: 9999;
 }
 
 .about__img {
     width: 480px;
     border-radius: 1.5rem;
     justify-self: center;
-
+    z-index: 9999;   
 }
 
 .about__heading {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-75);
+    z-index: 9999;
 }
 
 .about__description {
     text-align: justify;
     padding-right: 6rem;
     margin-bottom: var(--mb-2);
+    z-index: 9999;
 }
 
 .about__info {
@@ -359,6 +452,7 @@ input {
     grid-template-columns: repeat(2, 140px);
     column-gap: 3.5rem;
     margin-bottom: var(--mb-3);
+    z-index: 9999;
 }
 
 
@@ -377,15 +471,17 @@ input {
 }
 
 /*===== Werdegang Section =====*/
-.section{
-    background-image: url(Unterwasser2.jpg);
-    background-size: cover;
-    margin: auto;
+
+#particles1{
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: 999;
 }
+
 .werdegang__container {
     justify-content: center;
+    z-index: 9999;
 }
 
 .timeline__item {
@@ -393,6 +489,7 @@ input {
     padding-left: 3rem;
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-2-5);
+    z-index: 9999;
 }
 
 .timeline__item:last-child {
@@ -419,6 +516,7 @@ input {
     border-radius: 50%;
     background-color: var(--skin-color);
     transition: .3s;
+    z-index: 9999;
 }
 
 .timeline__item:hover .circle__dot {
@@ -444,6 +542,13 @@ input {
     color: var(--skin-color);
 }
 
+#particles2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
 .skills__container {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
@@ -454,16 +559,19 @@ input {
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .skills__header:not(:last-child) {
     margin-bottom: var(--mb-2-5);
+    z-index: 9999;
 }
 
 .skills__icon,
 .skills__arrow {
     font-size: 2rem;
     color: var(--skin-color);
+    z-index: 9999;
 }
 
 .skills__icon {
@@ -473,10 +581,12 @@ input {
 .skills__title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+    z-index: 9999;
 }
 
 .skills__subtitle {
     font-size: var(--small-font-size);
+    z-index: 9999;
 }
 
 .skills__arrow {
@@ -526,6 +636,13 @@ input {
     background-color: var(--skin-color);
 }
 
+#particles3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
 .project__container {
     grid-template-columns: repeat(3, 330px);
     gap: 1.8rem;
@@ -547,12 +664,14 @@ input {
     padding: .25rem .75rem;
     font-weight: var(--font-medium);
     border-radius: .5rem;
+    z-index: 9999;
 }
 
 .project__card {
     background-color: var(--box-color);
     padding: 1.25rem;
     border-radius: .5rem;
+    z-index: 9999;
 }
 
 .portfolio__item-details {
@@ -606,7 +725,7 @@ input {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    z-index: var(--z-modal);
+    z-index: 99999;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -615,6 +734,7 @@ input {
 .portfolio__popup.open {
     opacity: 1;
     visibility: visible;
+    z-index: 99999;
 }
 
 .portfolio__popup-inner {
@@ -623,12 +743,14 @@ input {
     border-radius: .5rem;
     padding: 2.5rem;
     position: relative;
+    z-index: 99999;
 }
 
 .portfolio__popup-content {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 3rem;
+    z-index: 99999;
 }
 
 .portfolio__popup-close {
@@ -638,45 +760,61 @@ input {
     font-size: 1.5rem;
     color: var(--skin-color);
     cursor: pointer;
+    z-index: 99999;
 }
 
 .portfolio__popup-img {
     border-radius: .5rem;
+    z-index: 99999;
 }
 
 .portfolio__popup-subtitle {
     font-size: var(--smaller-font-size);
     margin-bottom: var(--mb-0-25);
+    z-index: 99999;
 }
 
 .details__title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
+    z-index: 99999;
 }
 
 .details__description {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
+    z-index: 99999;
 }
 
 .details__info li {
     margin-bottom: var(--mb-0-75);
     text-transform: capitalize;
     font-size: var(--small-font-size);
+    z-index: 99999;
 }
 
 .details__info li:last-child {
     margin-bottom: 0;
+    z-index: 99999;
 }
 
 .details__info li span {
     font-weight: normal;
+    z-index: 99999;
 }
 
 .details__info li a {
     text-transform: lowercase;
     color: var(--skin-color);
+    z-index: 99999;
+}
+
+#particles4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
 }
 
 .contact__container {
@@ -689,6 +827,7 @@ input {
 .contact__info {
     display: grid;
     row-gap: 1rem;
+    z-index: 9999;
 }
 
 .contact__card {
@@ -696,6 +835,7 @@ input {
     padding: 1rem;
     border-radius: .5rem;
     text-align: center;
+    z-index: 9999;
 }
 
 .contact__card-icon {
@@ -741,6 +881,7 @@ input {
     position: relative;
     margin-top: .1rem;
     margin-bottom: 1.9rem;
+    z-index: 9999;
 }
 
 .input {
@@ -828,8 +969,6 @@ textarea.input {
     width: 50%;
     opacity: 1;
 }
-
-
 
 
 /*========== BREAKPOINTS ==========*/
