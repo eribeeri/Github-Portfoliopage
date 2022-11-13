@@ -142,11 +142,11 @@ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Port: "2525",
-        Username : "tang.eric@hotmail.com",
-        Password : "9A8606CF2DC8FE69045BEF994002ADD636D4",
-        To : 'tang.eric@hotmail.com',
+        Username : "tangeric.eric@gmail.com",
+        Password : "EB21EE3D11E6FA25EC4138A059E94204CD13",
+        To : 'tangeric.eric@gmail.com',
         From : document.getElementById("email").value,
-        Subject : "New Contact Form Enquiry",
+        Subject : "Kontaktanfrage Portfoliopage",
         Body : "Name: " + document.getElementById("name").value
             + "<br> Email: " + document.getElementById("email").value
             + "<br> Telefonnummer: " + document.getElementById("tel").value
