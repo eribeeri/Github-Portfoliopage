@@ -143,8 +143,8 @@ function sendEmail(){
         Host : "smtp.elasticemail.com",
         Port: "2525",
         Username : "tangeric.eric@gmail.com",
-        Password : "EB21EE3D11E6FA25EC4138A059E94204CD13",
-        To : 'tangeric.eric@gmail.com',
+        Password : "11D6D9A9562BD072D2F86F2DBE455D6302FC",
+        To : 'tang.eric@hotmail.com',
         From : document.getElementById("email").value,
         Subject : "Kontaktanfrage Portfoliopage",
         Body : "Name: " + document.getElementById("name").value
