@@ -140,10 +140,11 @@ var typed = new Typed(".typing",{
 /*Sending Email function*/
 function sendEmail(){
     Email.send({
+        secureToken: "1d9f29bd-9e04-4162-9b28-970c12201874",
         Host : "smtp.elasticemail.com",
         Port: "2525",
-        Username : "tangeric.eric@gmail.com",
-        Password : "11D6D9A9562BD072D2F86F2DBE455D6302FC",
+        Username : "tang.eric@hotmail.com",
+        Password : "7CF2C58A1486C4851A7820563747D3BC3106",
         To : 'tang.eric@hotmail.com',
         From : document.getElementById("email").value,
         Subject : "Kontaktanfrage Portfoliopage",
