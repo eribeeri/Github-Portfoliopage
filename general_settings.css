@@ -144,7 +144,7 @@ input {
     background-size: cover;
     margin: auto;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 /*===== Buttons =====*/
@@ -344,7 +344,7 @@ input {
 /*===== About Section =====*/
 #particles{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 999;
 }
@@ -479,7 +479,7 @@ input {
 
 #particles1{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 999;
 }
@@ -549,7 +549,7 @@ input {
 
 #particles2 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 999;
 }
@@ -643,7 +643,7 @@ input {
 
 #particles3 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 999;
 }
@@ -818,7 +818,7 @@ input {
 
 #particles4 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 999;
 }

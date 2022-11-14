@@ -132,8 +132,8 @@ function navHighlighter(){
 /*Typing*/
 var typed = new Typed(".typing",{
     strings:["Ich bin Eric Tang", "Klicke auf das Bild um mehr über mich zu erfahren!"],
-    typeSpeed: 100,
-    BackSpeed: 100,
+    typeSpeed: 50,
+    BackSpeed: 50,
     loop:true
 })
 
