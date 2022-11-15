@@ -499,6 +499,7 @@ input {
 
 .timeline__item:last-child {
     margin-bottom: 0;
+    z-index: 9999;
 }
 
 .timeline__item::before {
@@ -509,6 +510,7 @@ input {
     top: 0;
     height: 100%;
     background-color: var(--skin-color);
+    z-index: 9999;
 }
 
 .circle__dot {
@@ -526,6 +528,7 @@ input {
 
 .timeline__item:hover .circle__dot {
     background-color: var(--body-color);
+    z-index: 9999;
 }
 
 .timeline__title {
@@ -653,6 +656,7 @@ input {
     gap: 1.8rem;
     justify-content: center;
     padding-top: 1rem;
+    z-index: 9999;
 }
 
 .project__filters {
@@ -661,6 +665,7 @@ input {
     align-items: center;
     column-gap: .75rem;
     margin-bottom: 2rem;
+    z-index: 9999;
 }
 
 .project__item {
@@ -707,10 +712,12 @@ input {
 .project__button-icon {
     font-size: 1rem;
     transition: .3s;
+    z-index: 9999;
 }
 
 .project__button:hover .project__button-icon {
     transform: translateX(.25rem);
+    z-index: 9999;
 }
 
 /* Active Item Work*/

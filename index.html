@@ -16,6 +16,9 @@
       rel="stylesheet"
     />
 
+    <!--========== Scrolleffect ==========-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--========== SWIPER CSS ==========-->
     <link rel="stylesheet" href="swiper-bundle.min.css" />
 
@@ -91,9 +94,11 @@
           
         </div>
         <h2 class="section__title">Über mich</h2> 
-        <div class="about__container container grid">
+        <div class="about__container container grid" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <img src="Bild2.jpg" alt="" class="about__img">
-          <div class="about__data">
+          <div class="about__data" data-aos="fade-left" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <h3 class="about__heading">Hallo ich bin Eric Tang</h3>
             <p class="about__description">Geboren am 11.Mai 1999 in der Schweiz. Meine Hobbys sind Fussball spielen, Fitness und Schlafen. Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung. </p>
           </div>
@@ -107,7 +112,7 @@
         </div>
         <h2 class="section__title">Werdegang</h2>
 
-        <div class="werdegang__container container grid">
+        <div class="werdegang__container container grid" >
             <div class="timeline">
               <div class="timeline__item">
                 <div class="circle__dot"></div>
@@ -313,7 +318,7 @@
           <span class="project__item" data-filter=".design">Design</span>
         </div>
 
-        <div class="project__container container grid">
+        <div class="project__container container grid" >
           <div class="project__card mix web">
             <img src="Projekt1.jpg" alt="" class="project__img">
             <h3 class="project__title">Projekt im Modul WSEG</h3>
@@ -334,7 +339,7 @@
             </div>
           </div>
 
-          <div class="project__card mix design">
+          <div class="project__card mix design" >
             <img src="Projekt2.jpg" alt="" class="project__img">
             <h3 class="project__title">Prototyp Chatbot für Easygov</h3>
             <span class="project__button">Mehr erfahren
@@ -353,7 +358,7 @@
             </div>
           </div>
 
-          <div class="project__card mix web">
+          <div class="project__card mix web" >
             <img src="Projekt3.jpg" alt="" class="project__img">
             <h3 class="project__title">Github Portfoliopage</h3>
             <span class="project__button">Mehr erfahren
@@ -473,7 +478,8 @@
       <!--===== FOOTER =====-->
   
 
-    <!--========== SCROLL UP ==========-->
+    <!--========== SCROLL Effect ==========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--========== MIXITUP FILTER ==========-->
     <script src="mixitup.min.js"></script>

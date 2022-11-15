@@ -156,3 +156,7 @@ function sendEmail(){
     message => alert("Nachricht wurde erfolgreich übermittelt! Ich melde mich schnellstmöglich bei Ihnen.")
     );
 }
+
+/*=============== Scrolleffect ===============*/
+  AOS.init();
+
