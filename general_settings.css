@@ -305,7 +305,7 @@ input {
     top: 2rem;
     font-size: 1.2rem;
     border-radius: .25rem;
-    background-color: var(--skin-color);
+    background-color: rgb(13, 13, 88);
     color: var(--title-color);
     display: none;
     justify-content: center;
@@ -721,6 +721,16 @@ input {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
+}
+
+.oceanfloor {
+    background-image: url(Meeresboden.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .contact__button a,
