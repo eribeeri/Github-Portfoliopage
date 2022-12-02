@@ -15,6 +15,13 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!--========== Leafletjs for the map ==========-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
 
     <!--========== Scrolleffect ==========-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -86,34 +93,34 @@
       </section>
       <!--===== About me=====-->
   <div class="underwater"> 
-      <section class="about section" id="about">
-        <div id="particles">
+      <section class="about section" id="about" >
+        <!--<div id="particles">
           
           
           
           
-        </div>
+        </div>-->
         <h2 class="section__title">Über mich</h2> 
-        <div class="about__container container grid" data-aos="fade-right">
-          <img src="Bild2.jpg" alt="" class="about__img">
-          <div class="about__data" data-aos="fade-left" data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
-            <h3 class="about__heading">Hallo ich bin Eric Tang</h3>
-            <p class="about__description">Geboren am 11.Mai 1999 in der Schweiz. Meine Hobbys sind Fussball spielen, Fitness und Schlafen. Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung. </p>
+        <div class="about__container container grid" >
+          <img src="Bild2.jpg" alt="" class="about__img"data-aos="fade-up">
+          <div class="about__data"  data-aos="fade-up">
+            <h3 class="about__heading">Hallo ich bin Eric Tang👋</h3>
+            <p class="about__description"> <b>Geboren:</b><br> 11.Mai 1999 in der Schweiz👶<br> <b>Hobbys:</b><br> Fussball spielen⚽️, Fitness🏋🏻‍♂️ und Schlafen😴. <br> <b>Beschäftigung</b> <br> Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule👨🏻‍🎓 und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung.💻 <br> <b>Mein aktueller Wohnort</b> <br> </p>
+            <div id="map"></div>
           </div>
         </div>
       </section>
       <!--===== Werdegang =====-->
       
       <section class="werdegang section" id="werdegang">
-        <div id="particles1">
+        <!--<div id="particles1">
           
-        </div>
+        </div>-->
         <h2 class="section__title">Werdegang</h2>
 
         <div class="werdegang__container container grid" >
             <div class="timeline">
-              <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__item" data-aos="zoom-in">
                 <div class="circle__dot"></div>
                   <h3 class="timeline__title">Lehre bei Login Berufsbildung AG</h3>
                     <p class="timeline__text">Als Automatikmonteur</p>
@@ -122,7 +129,7 @@
                     </span>
               </div>
 
-              <div class="timeline__item" data-aos="fade-left">
+              <div class="timeline__item" data-aos="zoom-in">
                 <div class="circle__dot"></div>
                   <h3 class="timeline__title">Berufsmaturität an der WKS KV Bildung</h3>
                     <p class="timeline__text">Typ Dienstleistung Vollzeit</p>
@@ -131,7 +138,7 @@
                     </span>
               </div>
 
-              <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__item" data-aos="zoom-in">
                 <div class="circle__dot"></div>
                   <h3 class="timeline__title">Berner Fachhochschule Wirtschaft</h3>
                     <p class="timeline__text">Bachelorstudium im Studiengang Wirtschaftsinformatik</p>
@@ -144,9 +151,9 @@
       </section>
       <!--===== Skills =====-->
       <section class="skills section" id="skills">
-        <div id="particles2">
+       <!--<div id="particles2">
           
-        </div>
+        </div>-->
         <h2 class="section__title">Fähigkeiten</h2>
         <div class="skills__container container grid">
           <div class="skills__tabs" data-aos="fade-right">
@@ -306,9 +313,9 @@
       </section>
       <!--===== Projects =====-->
       <section class="projects section" id="projects">
-        <div id="particles3">
+        <!--<div id="particles3">
           
-        </div>
+        </div>-->
         <h2 class="section__title">Meine bisherigen Projekte</h2>
 
         <div class="project__filters" data-aos="fade-right">
@@ -492,6 +499,11 @@
 
     <!--========== MAIN JS ==========-->
     <script src="main.js"></script>
+
+    <!--========== Leafletjs ==========-->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
 
     <!--========== Particle JS ==========-->
     <script src="particles.js"></script>

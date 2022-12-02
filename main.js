@@ -160,3 +160,12 @@ function sendEmail(){
 /*=============== Scrolleffect ===============*/
   AOS.init();
 
+
+/*=============== Map from Leaflet ===============*/  
+var map = L.map('map').setView([46.96847906493365, 7.382256182742379], 15);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 15,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([46.968247745633164, 7.391682412187457]).addTo(map);
+marker.bindPopup("<b>Hallo!</b><br>Da wohne ich 🤓 ").openPopup();

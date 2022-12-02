@@ -228,6 +228,8 @@ input {
     float: left;
 }
 
+
+
 .container1 ul li a img{
     display: flex;
     height: 300px;
@@ -471,6 +473,13 @@ input {
     column-gap: 3.5rem;
     margin-bottom: var(--mb-3);
     z-index: 9999;
+}
+
+#map{
+    justify-self: center;
+    height: 200px;
+    width: 500px;
+    border-radius: 1.5rem;
 }
 
 
@@ -729,7 +738,8 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    margin: auto;
+    width: 100vh;
     min-height: 100vh;
 }
 
@@ -1084,6 +1094,10 @@ textarea.input {
         justify-content: center;
     }
 
+    #map{
+        justify-content: center;
+        padding-left: 100%;
+    }
 
     .about__description{
         padding: 0 4rem;
@@ -1129,6 +1143,10 @@ textarea.input {
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+
+    .underwater{
+        width: 100%;
+    }
 
     .sidebar {
             width: 100%;
@@ -1202,6 +1220,12 @@ textarea.input {
         width: 250px;
     }
 
+    #map {
+        justify-self: center;
+        text-align: center;
+        width: auto;
+    }
+
     .werdegang__container{
         grid-template-columns: 290px;
         row-gap: 3rem;
@@ -1242,6 +1266,14 @@ textarea.input {
 
 @media screen and (max-width: 576px) {
 
+    .underwater{
+        width: 100vh;
+    }
+
+    .oceanfloor{
+        width: 100vh;
+    }
+
     .home {
         background-image: none;
         height: initial;
@@ -1264,11 +1296,17 @@ textarea.input {
     }
 
     .about__info{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);    
     }
 
     .about__description{
-        padding: 0;
+        justify-self: center;
+    }
+
+    #map {
+        padding-left: 100%;
+        text-align: center;
+        justify-self: center;
     }
 
     .contact__container,
@@ -1281,9 +1319,21 @@ textarea.input {
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
+    .oceanfloor{
+        width: 100vh;
+    }
+    .underwater{
+        width: 100vh;
+    }
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
+    }
+
+    #map {
+        justify-self: center;
+        text-align: center;
+        width: auto;
     }
 
     .container1{
@@ -1292,7 +1342,7 @@ textarea.input {
     }
 
     .home{
-        width: 100%;
+        width: 100vh;
     }
 
     .home__img {
@@ -1309,6 +1359,7 @@ textarea.input {
         font-size: var(--normal-font-size);
     }
 
+    .about__container,
     .contact__container,
     .project__container,
     .skills__container,
@@ -1329,3 +1380,4 @@ textarea.input {
     }
 
 }
+
