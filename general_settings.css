@@ -238,7 +238,7 @@ input {
 }
 
 .container1 ul li a img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .container1 ul li a{
@@ -250,7 +250,7 @@ input {
 
 .border__img{
     position: relative;
-    background: linear-gradient(45deg, gold, fuchsia);
+    background: linear-gradient(45deg, blue, white);
     padding: 15px;
     border-radius: 100%;
     margin-bottom: 100%;
@@ -328,7 +328,7 @@ input {
 /* Active Link */
 .nav__link.active-link,
 .nav__link:hover {
-    color: rgb(13, 13, 88);
+    color: red;
 
 }
 
@@ -1007,7 +1007,7 @@ textarea.input {
     width: 10%;
     height: 5px;
     opacity: 0;
-    background-color: var(--body-color);
+    background-color: rgb(13, 13, 88);
     top: 50%;
     transform: translateY(-50%);
     transition: .3s;
@@ -1032,6 +1032,14 @@ textarea.input {
 .input__container.focus span::after {
     width: 50%;
     opacity: 1;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    font-size: var(--small-font-size);
+    background-color: rgb(13, 13, 88);
+    padding: 15px;
 }
 
 
@@ -1151,7 +1159,7 @@ textarea.input {
             width: 100%;
             z-index: 99999;
             transform: translateX(-100%);
-            background-color: blue;
+            background-color: rgb(13, 13, 88);;
         }
     
         .show-sidebar {
@@ -1185,6 +1193,7 @@ textarea.input {
     
         .nav__close {
             display: block;
+            color: white;
         }
     
         .nav__toggle {
