@@ -1,81 +1,134 @@
-.skills__container{
+/*=============== Fähigkeiten ===============*/
+#particles2 {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 999;
+}
+
+.skills__container {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
+    z-index: 9999;
 }
 
-.skills__header{
+.skills__header {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.skills__header:not(:last-child){
-    margin-bottom: var(--mb-2-5);
+.skills__header:not(:last-child) {
+    margin-bottom: 2.5rem;
 }
 
-.skills__icon, 
-.skills__arrow{
+.skills__icon,
+.skills__arrow {
     font-size: 2rem;
-    color: var(--skin-color);
+    color: rgb(13, 13, 88);
 }
 
-.skills__icon{
-    margin-right: var(--mb-0-75);
+.skills__icon {
+    margin-right: 0.75rem;
+    color: rgb(13, 13, 88);
 }
 
-.skills__title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+.skills__title {
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
-.skills__subtitle{
-    font-size: var(--small-font-size);
+.skills__subtitle {
+    font-size: 0.875rem;
 }
 
-.skills__arrow{
+.skills__arrow {
     margin-left: auto;
+    z-index: 9999;
 }
 
-.skills__active .skills__arrow{
+.skills__active .skills__arrow {
     transform: rotate(-90deg);
     transition: .3s;
+    z-index: 9999;
 }
 
 .skills [data-content] {
     display: none;
+    z-index: 9999;
 }
 
 .skills__active[data-content] {
     display: block;
+    z-index: 9999;
 }
 
-.skills__list{
+.skills__list {
     row-gap: 1.8rem;
+    z-index: 9999;
 }
 
-.skills__titles{
+.skills__titles {
     display: flex;
     justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: 0.5rem;
+    z-index: 9999;
 }
 
-.skills__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+.skills__name {
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: 9999;
+}
+
+.skills__number {
+    color: white;
 }
 
 .skills__bar,
 .skills__percentage {
     height: 5px;
     border-radius: .25rem;
+    z-index: 9999;
 }
 
-.skills__bar{
-    background-color: var(--box-color); 
+.skills__bar {
+    background-color: white;
+    z-index: 9999;
 }
 
-.skills__percentage{
+.skills__percentage {
     display: block;
-    background-color: var(--skin-color);
+    background-color: green;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        grid-template-columns: 340px 300px;
+    }
+
+    .skills__list {
+        row-gap: 1.7rem;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: 300px;
+        row-gap: 3rem;
+    }
+}
+
+/* Mobilegeräte */
+@media screen and (max-width: 350px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__title {
+        font-size: 1rem;
+    }
 }

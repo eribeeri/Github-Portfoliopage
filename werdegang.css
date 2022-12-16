@@ -1,13 +1,22 @@
 /*===== Werdegang Section =====*/
+#particles1 {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 999;
+}
+
 .werdegang__container {
     justify-content: center;
+    z-index: 9999;
 }
 
 .timeline__item {
     position: relative;
     padding-left: 3rem;
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-2-5);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    z-index: 9999;
 }
 
 .timeline__item:last-child {
@@ -21,7 +30,7 @@
     left: .48rem;
     top: 0;
     height: 100%;
-    background-color: var(--skin-color);
+    background-color: rgb(13, 13, 88);
 }
 
 .circle__dot {
@@ -30,31 +39,64 @@
     top: 0;
     height: 1rem;
     width: 1rem;
-    border: 2px solid var(--skin-color);
+    border: 2px solid rgb(13, 13, 88);
     border-radius: 50%;
-    background-color: var(--skin-color);
+    background-color: rgb(13, 13, 88);
     transition: .3s;
 }
 
 .timeline__item:hover .circle__dot {
-    background-color: var(--body-color);
+    background-color: white;
 }
 
 .timeline__title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-25);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
 .timeline__text {
-    font-size: var(--smaller-font-size);
-    margin-bottom: var(--mb-1);
+    font-size: 0.813rem;
+    margin-bottom: 1rem;
 }
 
 .timeline__date {
     display: flex;
     align-items: center;
     column-gap: .4rem;
-    font-size: var(--small-font-size);
-    color: var(--skin-color);
+    font-size: 0.875rem;
+    color: rgb(13, 13, 88);
+}
+
+/* Grossen Geräte */
+@media screen and (max-width: 1024px) {
+    
+    .werdegang__container {
+        grid-template-columns: repeat(1, 290px);
+    }
+
+    .skills__container {
+        grid-template-columns: 340px 300px;
+    }
+
+    .skills__list {
+        row-gap: 1.7rem;
+    }
+}
+
+/* Mittelgrossen Geräte */
+@media screen and (max-width: 768px) {
+
+    .werdegang__container {
+        grid-template-columns: 290px;
+        row-gap: 3rem;
+    }
+}
+
+/* Mobilgeräte */
+@media screen and (max-width: 350px) {
+    
+    .werdegang__container {
+        grid-template-columns: 1fr;
+    }  
 }

@@ -1,152 +1,263 @@
-.project__container{
+#particles3 {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 999;
+}
+
+.project__container {
     grid-template-columns: repeat(3, 330px);
     gap: 1.8rem;
     justify-content: center;
     padding-top: 1rem;
+    z-index: 9999;
 }
 
-.project__filters{
+.project__filters {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: .75rem;
     margin-bottom: 2rem;
+    z-index: 9999;
 }
 
-.project__item{
+.project__item {
     cursor: pointer;
-    color: var(--title-color);
+    color: white;
     padding: .25rem .75rem;
-    font-weight: var(--font-medium);
+    font-weight: 500;
     border-radius: .5rem;
+    z-index: 9999;
 }
 
-.project__card{
-    background-color: var(--box-color);
+.project__card {
+    background-color: rgb(13, 13, 88);
     padding: 1.25rem;
     border-radius: .5rem;
+    z-index: 9999;
 }
 
 .portfolio__item-details {
     display: none;
 }
 
-.project__img{
-    border-radius: .5rem;
-    margin-bottom: var(--mb-1);
+.project__img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.project__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-5);
+.project__title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
-.project__button{
-    color: var(--skin-color);
-    font-size: var(--small-font-size);
+.project__button {
+    color: white;
+    font-size: 0.875rem;
     display: flex;
     align-items: center;
     column-gap: .25rem;
     cursor: pointer;
+    z-index: 9999;
 }
 
-.project__button-icon{
+.project__button-icon {
     font-size: 1rem;
     transition: .3s;
+    z-index: 9999;
 }
 
 .project__button:hover .project__button-icon {
     transform: translateX(.25rem);
+    z-index: 9999;
 }
 
 /* Active Item Work*/
-.active-project{
-    background-color: var(--skin-color);
-    color: var(--title-color);
+.active-project {
+    background-color: rgb(13, 13, 88);
+    color: white;
 }
 
 /*Portfolio Popup*/
-.portfolio__popup{
+.portfolio__popup {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    z-index: var(--z-modal);
+    z-index: 99999;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
 }
 
-.portfolio__popup.open{
+.portfolio__popup.open {
     opacity: 1;
     visibility: visible;
+    z-index: 99999;
 }
 
-.portfolio__popup-inner{
-    background-color: var(--box-color);
+.portfolio__popup-inner {
+    background-color: rgb(13, 13, 88);
     width: 900px;
     border-radius: .5rem;
     padding: 2.5rem;
     position: relative;
+    z-index: 99999;
 }
 
-.portfolio__popup-content{
+.portfolio__popup-content {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 3rem;
+    z-index: 99999;
 }
 
-.portfolio__popup-close{
+.portfolio__popup-close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
     font-size: 1.5rem;
-    color: var(--skin-color);
+    color: white;
     cursor: pointer;
+    z-index: 99999;
 }
 
-.portfolio__popup-img{
+.portfolio__popup-img {
     border-radius: .5rem;
+    z-index: 99999;
 }
 
-.portfolio__popup-subtitle{
-    font-size: var(--smaller-font-size);
-    margin-bottom: var(--mb-0-25);
+.portfolio__popup-subtitle {
+    font-size: 0.813rem;
+    margin-bottom: 0.25rem;
+    color: white;
+    z-index: 99999;
 }
 
-.details__title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1);
+.details__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+    z-index: 99999;
 }
 
-.details__description{
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-2);
+.details__description {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    color: white;
+    z-index: 99999;
 }
 
 .details__info li {
-    margin-bottom: var(--mb-0-75);
-    text-transform: capitalize;
-    font-size: var(--small-font-size);
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: white;
+    z-index: 99999;
 }
 
-.details__info li:last-child{
+.details__info li:last-child {
     margin-bottom: 0;
+    z-index: 99999;
 }
 
-.details__info li span{
+.details__info li span {
     font-weight: normal;
+    z-index: 99999;
 }
 
-.details__info li a{
-    text-transform: lowercase;
-    color: var(--skin-color);
+.details__info li a {
+    color: white;
+    z-index: 99999;
+}
+
+@media screen and (max-width: 1216px) {
+    .project__container {
+        grid-template-columns: repeat(2, 330px);
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .project__container {
+        padding: 1rem;
+    }
+
+    .project__img {
+        margin-bottom: 0.75rem;
+    }
+
+    .project__title {
+        margin-bottom: 0.25rem;
+    }
+
+    .portfolio__item-details {
+        margin-bottom: 1.5rem;
+    }
+
+    .details__info li {
+        margin-bottom: 0.5rem;
+    }
+
+    .details__title {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 768px) {
+    .project__container {
+        grid-template-columns: 330px;
+    }
+
+    .portfolio__popup-inner {
+        width: 420px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    }
+
+    .portfolio__popup-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }
+
+    .details__title {
+        font-size: 1rem;
+    }
+
+    .portfolio__popup-close {
+        top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project__container {
+        grid-template-columns: 300px;
+    }
+}
+
+/* For Small Devices */
+@media screen and (max-width: 350px) {
+    .project__container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__title {
+        font-size: 1rem;
+    }
+
+    .project__item {
+        font-size: 0.875rem;
+    }
+
+    .project__filters {
+        column-gap: 0.25rem;
+    }
 }
