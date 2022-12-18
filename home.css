@@ -1,0 +1,110 @@
+/*===== Home Section =====*/
+.home {
+    min-height: 100vh;
+}
+
+.home__title {
+    font-size: 3rem;
+}
+
+
+.home__subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.container1 ul {
+    float: left;
+}
+
+.container1 ul li a img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+.container1 ul li a img:hover {
+    transform: scale(1.05);
+}
+
+.container1 ul li a {
+    display: block;
+    background-color: white;
+    padding: 4px;
+    border-radius: 100%;
+}
+
+.border__img {
+    position: relative;
+    background: linear-gradient(45deg, blue, white);
+    padding: 15px;
+    border-radius: 100%;
+    margin-bottom: 100%;
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 768px) {
+    .home {
+        background-image: none;
+        height: initial;
+        align-items: initial;
+        padding: 7rem 0 2rem;
+    }
+
+    .home__container {
+        row-gap: 2rem;
+    }
+
+    .home__img {
+        display: block;
+        width: 250px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+        background-image: none;
+        height: initial;
+        align-items: initial;
+        padding: 7rem 0 2rem;
+    }
+
+    .home__container {
+        row-gap: 2rem;
+    }
+
+    .home__img {
+        display: block;
+        width: 250px;
+        justify-self: center;
+    }
+}
+
+/* For Small Devices */
+@media screen and (max-width: 350px) {
+    .container1 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .home__img {
+        display: block;
+        width: 50px;
+        justify-self: center;
+    }
+
+    .home__title {
+        font-size: 2.25rem;
+    }
+
+    .home__subtitle {
+        font-size: 1rem;
+    }
+}
