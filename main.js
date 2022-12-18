@@ -1,9 +1,9 @@
-/*=============== SHOW SIDEBAR ===============*/
+/*=============== Sidebar anzeigen bei Mobilen Ansicht ===============*/
 const navMenu = document.getElementById('sidebar'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== SIDEBAR SHOW =====*/
+/*===== Sidebar anzeigen bei Mobilen Ansicht =====*/
 /* Validate If Constant Exists */
 if(navToggle){
     navToggle.addEventListener("click", () => {
@@ -11,17 +11,14 @@ if(navToggle){
     })
 }
 
-
-/*===== SIDEBAR HIDDEN =====*/
-/* Validate If Constant Exists */
+/*===== Sidebar ausblenden mit Schliesskreuz =====*/
 if(navClose){
     navClose.addEventListener("click", () => {
         navMenu.classList.remove('show-sidebar')
     })
 }
 
-
-/*=============== SKILLS TABS ===============*/
+/*=============== Skills (Section Fähigkeiten) Tabs auswählen ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContent = document.querySelectorAll('[data-content]')
 
@@ -44,8 +41,7 @@ const tabs = document.querySelectorAll('[data-target]'),
         })
       })
 
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+/*=============== Projekt öffnen beim Klick auf "mehr erfahren" ===============*/
 let mixerPortfolio = mixitup('.project__container', {
     selectors: {
         target: '.project__card'
@@ -55,7 +51,7 @@ let mixerPortfolio = mixitup('.project__container', {
     }
 });
 
-/*===== Link Active Work =====*/
+/*===== Aktive Link =====*/
 const linkProject = document.querySelectorAll('.project__item')
 
 function activeProject(){
@@ -65,7 +61,7 @@ function activeProject(){
 
 linkProject.forEach(l=> l.addEventListener("click", activeProject))
 
-/*===== Project Popup =====*/
+/*===== Projekt öffnen =====*/
 document.addEventListener("click", (e) => {
     if(e.target.classList.contains("project__button")) {
         togglePortfolioPopup();
@@ -85,7 +81,7 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML
 }
 
-/*=============== INPUT ANIMATION ===============*/
+/*==== Kontaktformular bei Klick auf Input --> Animation der Kontaktobjekt zb Name ====*/
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
@@ -105,7 +101,7 @@ inputs.forEach((input) => {
     input.addEventListener("blur", blurFunc);
 })
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*=============== Navbar Scroll -->Anzeigen der richtigen Section im Navbar ===============*/
 const sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", navHighlighter);
@@ -127,9 +123,7 @@ function navHighlighter(){
     })
 }
 
-/*=============== SHOW SCROLL UP ===============*/
-
-/*Typing*/
+/*Typing beim Home Section --> Animation Titel*/
 var typed = new Typed(".typing",{
     strings:["Ich bin Eric Tang", "Klicke auf das Bild um mehr über mich zu erfahren!"],
     typeSpeed: 50,
@@ -137,7 +131,7 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
-/*Sending Email function*/
+/*Email senden mit einen Hostserver*/
 function sendEmail(){
     Email.send({
         secureToken: "1d9f29bd-9e04-4162-9b28-970c12201874",
@@ -157,11 +151,11 @@ function sendEmail(){
     );
 }
 
-/*=============== Scrolleffect ===============*/
-  AOS.init();
+/*=============== Scroll Effekt ===============*/
+AOS.init();
 
 
-/*=============== Map from Leaflet ===============*/  
+/*=============== Karte von der Leafletjs bei Section Über mich ===============*/  
 var map = L.map('map').setView([46.96847906493365, 7.382256182742379], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,
