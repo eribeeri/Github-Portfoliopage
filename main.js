@@ -42,12 +42,13 @@ const tabs = document.querySelectorAll('[data-target]'),
       })
 
 /*=============== Projekt öffnen beim Klick auf "mehr erfahren" ===============*/
+/*===== Tabwahl zwischen All, Web und Design mit mixitupjs =====*/
 let mixerPortfolio = mixitup('.project__container', {
     selectors: {
         target: '.project__card'
     },
     animation: {
-        duration: 300
+        duration: 500
     }
 });
 
