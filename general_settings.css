@@ -139,7 +139,7 @@ input {
     font-size: 1.2rem;
 }
 
-/*Scroll bar*/
+/*Scroll bar Effekte*/
 ::-webkit-scrollbar{
     width: .60rem;
     background-color: rgb(13, 13, 88);
@@ -250,7 +250,7 @@ input {
 }
 
 /*========== BREAKPOINTS ==========*/
-/* For Large Devices */
+/* Für grosse Geräte */
 @media screen and (max-width: 1408px) {
     .container {
         margin-left: 2.5rem;
@@ -269,7 +269,7 @@ input {
     }
 }
 
-/* For Medium Devices */
+/* Für mittleren Geräte */
 @media screen and (max-width: 768px) {
     .underwater {
         width: 100%;
@@ -332,7 +332,7 @@ input {
     }
 }
 
-/* For Small Devices */
+/* Für mobilen Geräte */
 @media screen and (max-width: 350px) {
     .container{
         margin-left: 1rem;
