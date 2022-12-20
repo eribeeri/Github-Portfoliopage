@@ -198,6 +198,6 @@ textarea.input {
 /* For Small Devices */
 @media screen and (max-width: 350px) {
     .contact__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 200px;
     }
 }

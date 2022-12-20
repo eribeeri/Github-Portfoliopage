@@ -94,17 +94,17 @@
         width: 100%;
     }
 
-    .home__img {
-        display: block;
-        width: 50px;
-        justify-self: center;
+    .container1 ul li a img {
+        height: 220px;
+        width: 220px;
+        border-radius: 100%;
     }
 
     .home__title {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     .home__subtitle {
-        font-size: 1rem;
+        font-size: 0.938rem;
     }
 }

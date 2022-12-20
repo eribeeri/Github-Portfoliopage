@@ -97,6 +97,6 @@
 @media screen and (max-width: 350px) {
     
     .werdegang__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 200px;
     }  
 }

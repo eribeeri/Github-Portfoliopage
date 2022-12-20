@@ -246,7 +246,7 @@
 /* For Small Devices */
 @media screen and (max-width: 350px) {
     .project__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 250px;
     }
 
     .skills__title {

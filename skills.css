@@ -100,7 +100,7 @@
 
 .skills__percentage {
     display: block;
-    background-color: green;
+    background-color: rgb(13, 13, 88);
     z-index: 9999;
 }
 
@@ -125,7 +125,7 @@
 /* Mobilegeräte */
 @media screen and (max-width: 350px) {
     .skills__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 200px;
     }
 
     .skills__title {

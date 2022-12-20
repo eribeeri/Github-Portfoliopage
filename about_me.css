@@ -68,7 +68,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
@@ -99,20 +98,18 @@
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
-
     .about__img {
         width: 250px;
     }
 
     #map {
-        justify-self: center;
+        justify-content: center;
         text-align: center;
         width: auto;
     }
 }
 
 @media screen and (max-width: 576px) {
-
     .my__info {
         display: none;
     }
@@ -128,25 +125,26 @@
     #map {
         padding-left: 100%;
         text-align: center;
-        justify-self: center;
+        justify-content: center;
     }
 }
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
-
     #map {
-        justify-self: center;
+        justify-content: center;
         text-align: center;
         width: auto;
     }
 
-    .container1 {
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .about__description {
+        font-size: 0.938rem;
+        justify-self: center;
+        text-align: center;
     }
 
     .about__container{
         grid-template-columns: 1fr;
+        text-align: center;
     }
 }
