@@ -44,7 +44,7 @@
     margin-bottom: 100%;
 }
 
-/* For Medium Devices */
+/* Für mittleren Geräte */
 @media screen and (max-width: 768px) {
     .home {
         background-image: none;
@@ -64,6 +64,7 @@
     }
 }
 
+/* Für mittleren Geräte */
 @media screen and (max-width: 576px) {
     .home {
         background-image: none;
@@ -83,7 +84,7 @@
     }
 }
 
-/* For Small Devices */
+/* Für mobilen Geräte */
 @media screen and (max-width: 350px) {
     .container1 {
         margin-left: 1rem;

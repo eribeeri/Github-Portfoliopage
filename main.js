@@ -4,7 +4,7 @@ const navMenu = document.getElementById('sidebar'),
       navClose = document.getElementById('nav-close')
 
 /*===== Sidebar anzeigen bei Mobilen Ansicht =====*/
-/* Validate If Constant Exists */
+/* Validieren wenn Konstant vorhanden ist */
 if(navToggle){
     navToggle.addEventListener("click", () => {
         navMenu.classList.add('show-sidebar')
@@ -18,7 +18,7 @@ if(navClose){
     })
 }
 
-/*=============== Skills (Section Fähigkeiten) Tabs auswählen ===============*/
+/*=============== Skills (Section Fähigkeiten und Sprachen) Tabs auswählen ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContent = document.querySelectorAll('[data-content]')
 
@@ -43,6 +43,7 @@ const tabs = document.querySelectorAll('[data-target]'),
 
 /*=============== Projekt öffnen beim Klick auf "mehr erfahren" ===============*/
 /*===== Tabwahl zwischen All, Web und Design mit mixitupjs =====*/
+/* Quelle: https://www.kunkalabs.com/mixitup/docs/get-started/ */
 let mixerPortfolio = mixitup('.project__container', {
     selectors: {
         target: '.project__card'
@@ -125,6 +126,7 @@ function navHighlighter(){
 }
 
 /*Typing beim Home Section --> Animation Titel*/
+/* Quelle: https://github.com/mattboldt/typed.js */
 var typed = new Typed(".typing",{
     strings:["Ich bin Eric Tang", "Klicke auf das Bild um mehr über mich zu erfahren!"],
     typeSpeed: 50,
@@ -133,6 +135,7 @@ var typed = new Typed(".typing",{
 })
 
 /*Email senden mit einen Hostserver*/
+/* Quelle: https://smtpjs.com/ */
 function sendEmail(){
     Email.send({
         secureToken: "1d9f29bd-9e04-4162-9b28-970c12201874",
@@ -153,10 +156,12 @@ function sendEmail(){
 }
 
 /*=============== Scroll Effekt ===============*/
+/* Quelle: https://michalsnik.github.io/aos/  */    
 AOS.init();
 
 
-/*=============== Karte von der Leafletjs bei Section Über mich ===============*/  
+/*=============== Karte von der Leafletjs bei Section Über mich ===============*/ 
+/* Quelle: https://leafletjs.com/examples/quick-start/  */ 
 var map = L.map('map').setView([46.96847906493365, 7.382256182742379], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,

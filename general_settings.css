@@ -189,7 +189,7 @@ input {
     font-weight: 500;
     position: relative;
     transition: .4s;
-    font-size: 12px;
+    font-size: 10px;
     z-index: 99999;
 }
 
@@ -232,7 +232,7 @@ input {
     content: '';
     width: 6px;
     height: 6px;
-    background-color: rgb(13, 13, 88);
+    background-color: red;
     border-radius: 50%;
     bottom: 1.8rem;
     left: 0;
@@ -240,7 +240,7 @@ input {
     margin: auto;
 }
 
-/*=============== MAIN ===============*/
+/*=============== Main ===============*/
 .main {
     padding-top: 25px;
     display: flex;
@@ -250,7 +250,7 @@ input {
 }
 
 /*========== BREAKPOINTS ==========*/
-/* Für grosse Geräte */
+/* Für sehr grosse Geräte */
 @media screen and (max-width: 1408px) {
     .container {
         margin-left: 2.5rem;
@@ -258,6 +258,7 @@ input {
     }
 }
 
+/* Für  grosse Geräte */
 @media screen and (max-width: 1024px) {
     .container {
         margin-left: 1.5rem;
@@ -270,7 +271,7 @@ input {
 }
 
 /* Für mittleren Geräte */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
     .underwater {
         width: 100%;
     }
@@ -326,6 +327,7 @@ input {
     }
 }
 
+/* Mittleren Geräte */
 @media screen and (max-width: 576px) {
     .underwater{
         width: 100vh;
@@ -333,14 +335,15 @@ input {
 }
 
 /* Für mobilen Geräte */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .container{
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
     .section__title{
-        font-size: 1.1rem;
+        font-size: 1.23rem;
+        margin-left: 15px;
     }
 }
 

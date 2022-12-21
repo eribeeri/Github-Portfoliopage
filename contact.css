@@ -181,7 +181,7 @@ textarea.input {
     opacity: 1;
 }
 
-/* For Medium Devices */
+/* Für mittleren Geräte */
 @media screen and (max-width: 768px) {
     .contact__container {
         grid-template-columns: 360px;
@@ -189,13 +189,14 @@ textarea.input {
     }
 }
 
+/* Für mittleren Geräte */
 @media screen and (max-width: 576px) {
     .contact__container {
         grid-template-columns: 300px;
     }
 }
 
-/* For Small Devices */
+/* Für mobilen Geräte */
 @media screen and (max-width: 350px) {
     .contact__container {
         grid-template-columns: 200px;

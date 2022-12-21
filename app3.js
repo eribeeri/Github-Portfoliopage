@@ -1,6 +1,6 @@
 /* Für die Bubbleeffekte im Hintergrund in jeder Section */
 /* Quelle: https://vincentgarreau.com/particles.js/ */
-/* Anpassungen bei ... */
+/* Anpassungen bei line_linked, move und interactivity */
 
 particlesJS('particles3',
   

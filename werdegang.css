@@ -1,4 +1,4 @@
-/*===== Werdegang Section =====*/
+/*===== Werdegang  =====*/
 #particles1 {
     width: 100%;
     min-height: 100vh;
@@ -68,9 +68,8 @@
     color: rgb(13, 13, 88);
 }
 
-/* Grossen Geräte */
+/* Für grossen Geräte */
 @media screen and (max-width: 1024px) {
-    
     .werdegang__container {
         grid-template-columns: repeat(1, 290px);
     }
@@ -84,18 +83,16 @@
     }
 }
 
-/* Mittelgrossen Geräte */
+/* Für mittelgrossen Geräte */
 @media screen and (max-width: 768px) {
-
     .werdegang__container {
         grid-template-columns: 290px;
         row-gap: 3rem;
     }
 }
 
-/* Mobilgeräte */
-@media screen and (max-width: 350px) {
-    
+/* Für Mobilgeräte */
+@media screen and (max-width: 350px) { 
     .werdegang__container {
         grid-template-columns: 200px;
     }  

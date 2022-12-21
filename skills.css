@@ -1,4 +1,4 @@
-/*=============== Fähigkeiten ===============*/
+/*=============== Fähigkeiten und Sprachen ===============*/
 #particles2 {
     width: 100%;
     min-height: 100vh;
@@ -104,6 +104,7 @@
     z-index: 9999;
 }
 
+/* Für grosse Geräte */
 @media screen and (max-width: 1024px) {
     .skills__container {
         grid-template-columns: 340px 300px;
@@ -114,7 +115,7 @@
     }
 }
 
-/* For Medium Devices */
+/* Für mittleren Geräte */
 @media screen and (max-width: 768px) {
     .skills__container {
         grid-template-columns: 300px;
@@ -122,7 +123,7 @@
     }
 }
 
-/* Mobilegeräte */
+/* Für Mobilegeräte */
 @media screen and (max-width: 350px) {
     .skills__container {
         grid-template-columns: 200px;
