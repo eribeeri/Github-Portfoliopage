@@ -277,6 +277,7 @@ input {
 
     .sidebar {
         width: 100%;
+        min-height: 100%;
         z-index: 99999;
         transform: translateX(-100%);
         background-color: rgb(13, 13, 88);;
