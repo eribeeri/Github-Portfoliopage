@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <!--========== Leafletjs für die Karte mit CSS und Javascript ==========-->
+    <!--========== Quelle: https://leafletjs.com/examples/quick-start/ ==========-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
@@ -24,6 +25,7 @@
      crossorigin=""></script>
 
     <!--========== Scrolleffekt CSS ==========-->
+    <!--========== Quelle: Quelle: https://michalsnik.github.io/aos/  ==========-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--========== CSS ==========-->
@@ -98,20 +100,20 @@
       <!--===== Über mich =====-->
     <div class="underwater"> 
       <section class="about section" id="about" >
-        <div id="particles"></div>
+        <div id="particles"></div> <!--Bubbleeffekt im Hintergrund-->
         <h2 class="section__title">Über mich🐟</h2> 
         <div class="about__container container grid">
           <img src="Bild2.jpg" alt="Bild 2 von Eric Tang" class="about__img"data-aos="fade-up">
           <div class="about__data"  data-aos="fade-up">
             <h3 class="about__heading">Hallo ich bin Eric Tang👋</h3>
-            <p class="about__description"> <b>Geboren:</b><br> 11.Mai 1999 in der Schweiz👶<br> <b>Hobbys:</b><br> Fussball spielen⚽️, Fitness🏋🏻‍♂️ und Schlafen😴. <br> <b>Beschäftigung</b> <br> Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule👨🏻‍🎓 und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung.💻 <br> <b>Mein aktueller Wohnort</b> <br> </p>
+            <p class="about__description"> <b>Geboren:</b><br> 11. Mai 1999 in der Schweiz👶<br> <b>Hobbys:</b><br> Fussball spielen⚽️, Fitness🏋🏻‍♂️ und Schlafen😴. <br> <b>Beschäftigung</b> <br> Zurzeit studiere ich Wirtschaftsinformatik an der Berner Fachhochschule👨🏻‍🎓 und erlange Kenntnisse in Richtung Web- und Softwarenetwicklung.💻 <br> <b>Mein aktueller Wohnort</b></p>
             <div id="map"></div>
           </div>
         </div>
       </section>
       <!--===== Werdegang =====-->
       <section class="werdegang section" id="werdegang">
-      <div id="particles1"></div>
+      <div id="particles1"></div> <!--Bubbleeffekt im Hintergrund-->
         <h2 class="section__title">Werdegang🐟</h2>
           <div class="werdegang__container container grid" >
             <div class="timeline">
@@ -147,7 +149,7 @@
       </section>
       <!--===== Fähigkeiten und Sprachen =====-->
       <section class="skills section" id="skillslanguage">
-       <div id="particles2"></div>
+       <div id="particles2"></div> <!--Bubbleeffekt im Hintergrund-->
         <h2 class="section__title">Fähigkeiten und Sprachen🐟</h2>
         <div class="skills__container container grid">
           <!--===== Die Tabs =====-->
@@ -305,7 +307,7 @@
       </section>
       <!--===== Projects =====-->
       <section class="projects section" id="projects">
-        <div id="particles3"></div>
+        <div id="particles3"></div> <!--Bubbleeffekt im Hintergrund-->
         <h2 class="section__title">Meine bisherigen Projekte🐟</h2>
         <!--===== Auswahl =====-->
         <div class="project__filters" data-aos="fade-down">
@@ -468,24 +470,29 @@
       <!--===== FOOTER =====-->
       <div class="footer">Made by Eric Tang🌊</div>
     </main>
-    </div> <!--===== Underwater end =====-->
+    </div> <!-- Underwater end -->
     
     <!--========== Scrolleffekt ==========-->
+    <!--========== Quelle: https://michalsnik.github.io/aos/ ==========-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--= Mixitup für die Tabwahl zwischen All, Web und Design bei Section Projects =-->
+    <!--========== Quelle: https://www.kunkalabs.com/mixitup/docs/get-started/ ==========-->
     <script src="mixitup.min.js"></script>
 
     <!--========== Email senden ==========-->
+    <!--========== Quelle: https://smtpjs.com/ ==========-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--========== Typing JS -> Für den Typing Effekt beim Homesection ==========-->
+    <!--========== Quelle: https://github.com/mattboldt/typed.js ==========-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 
     <!--========== Haupt JS Datei ==========-->
     <script src="main.js"></script>
 
-    <!--========== Particle JS für den "Blubbereffect" ==========-->
+    <!--========== Particle JS für den "Blubbereffect" im Hintergrund==========-->
+    <!--========== Quelle: https://vincentgarreau.com/particles.js/ ==========-->
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="app1.js"></script>

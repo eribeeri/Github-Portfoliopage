@@ -58,7 +58,7 @@ input {
     outline: none;
 }
 
-/*=============== LAYOUT ===============*/
+/*=============== Layout ===============*/
 .container {
     max-width: 1250px;
     margin-left: auto;
@@ -88,7 +88,7 @@ input {
     min-height: 100vh;
 }
 
-/*=============== Scrolling effect ===============*/
+/*=============== Scrolling Effekt ===============*/
 [data-aos] {
     pointer-events: none;
 }
@@ -139,7 +139,7 @@ input {
     font-size: 1.2rem;
 }
 
-/*Scroll bar Effekte*/
+/*Scroll Bar Effekte*/
 ::-webkit-scrollbar{
     width: .60rem;
     background-color: rgb(13, 13, 88);
@@ -249,7 +249,6 @@ input {
     flex-wrap: wrap;
 }
 
-/*========== BREAKPOINTS ==========*/
 /* Für sehr grosse Geräte */
 @media screen and (max-width: 1408px) {
     .container {

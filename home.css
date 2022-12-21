@@ -1,4 +1,4 @@
-/*===== Home Section =====*/
+/*=============== Home ===============*/
 .home {
     min-height: 100vh;
 }
@@ -6,7 +6,6 @@
 .home__title {
     font-size: 3rem;
 }
-
 
 .home__subtitle {
     font-size: 1.5rem;

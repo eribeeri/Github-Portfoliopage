@@ -1,6 +1,6 @@
 /* Für die Bubbleeffekte im Hintergrund in jeder Section */
 /* Quelle: https://vincentgarreau.com/particles.js/ */
-/* Anpassungen bei line_linked, move und interactivity */
+/* Anpassungen bei line_linked, speed, move und interactivity */
 
 particlesJS('particles1',
   
@@ -46,7 +46,7 @@ particlesJS('particles1',
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 35,
           "size_min": 0.1,
           "sync": false
         }
@@ -60,7 +60,7 @@ particlesJS('particles1',
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 8,
         "direction": "top",
         "random": false,
         "straight": false,
@@ -97,7 +97,7 @@ particlesJS('particles1',
           "size": 40,
           "duration": 2,
           "opacity": 8,
-          "speed": 3
+          "speed": 5
         },
         "repulse": {
           "distance": 200
