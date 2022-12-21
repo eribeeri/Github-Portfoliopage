@@ -47,6 +47,7 @@
     height: 200px;
     width: 500px;
     border-radius: 1.5rem;
+    z-index: 9999;
 }
 
 .about__title {
