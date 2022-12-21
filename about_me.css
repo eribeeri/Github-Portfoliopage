@@ -134,7 +134,7 @@
 }
 
 /* Für mobilen Geräte */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     #map {
         margin-left: 7px;
     }

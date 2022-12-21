@@ -124,7 +124,7 @@
 }
 
 /* Für Mobilegeräte */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .skills__container {
         grid-template-columns: 200px;
     }

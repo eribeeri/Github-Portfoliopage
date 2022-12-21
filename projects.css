@@ -247,7 +247,7 @@
 }
 
 /* Für mobilen Geräte */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .project__container {
         grid-template-columns: 250px;
     }

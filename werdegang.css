@@ -92,7 +92,7 @@
 }
 
 /* Für Mobilgeräte */
-@media screen and (max-width: 350px) { 
+@media screen and (max-width: 360px) { 
     .werdegang__container {
         grid-template-columns: 200px;
     }  
